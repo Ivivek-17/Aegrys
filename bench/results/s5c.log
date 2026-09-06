@@ -1,0 +1,28 @@
+warming LLM + preloading sessions...
+  ready
+
+interleaved: baseline before AND after every scenario
+  baseline solo                   15.03 tok/s
+  LLM + TTS t=2                   13.21 tok/s | TTS RTF 0.138/p95 0.191
+  baseline solo                   12.68 tok/s
+  LLM + TTS t=4                   12.67 tok/s | TTS RTF 0.126/p95 0.141
+  baseline solo                   13.96 tok/s
+  LLM + TTS t=2 + VAD             13.04 tok/s | TTS RTF 0.167/p95 0.183 | VAD p99 2.12ms jit +1.2/+2.2ms
+  baseline solo                   14.10 tok/s
+  LLM + TTS t=2 + STT t=2 + VAD   12.27 tok/s | TTS RTF 0.195/p95 0.223 | STT 1305ms | VAD p99 1.83ms jit +2.1/+5.3ms
+  baseline solo                   13.96 tok/s
+
+==============================================================================
+baseline trace (thermal drift): 15.03 -> 12.68 -> 13.96 -> 14.10 -> 13.96
+drift over run: -7.1%  (stable)
+model reloads: 0 (clean)
+
+scenario                           tok/s    base  degrade  TTSrtf  VADjit
+LLM + TTS t=2                      13.21   13.86    -4.7%   0.138     nan
+LLM + TTS t=4                      12.67   13.32    -4.9%   0.126     nan
+LLM + TTS t=2 + VAD                13.04   14.03    -7.1%   0.167    1.25
+LLM + TTS t=2 + STT t=2 + VAD      12.27   14.03   -12.5%   0.195    2.10
+
+worst TTS RTF p95    : 0.223   PASS  (must be < 1.0)
+worst VAD jitter max : +5.33 ms   PASS  (must be << 32 ms)
+worst LLM degradation: -12.5%

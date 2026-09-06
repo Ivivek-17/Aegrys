@@ -1,0 +1,32 @@
+[
+  {
+    "voice": "en_US-amy-low",
+    "threads": 4,
+    "short": {
+      "ms": 392.6,
+      "audio_s": 2.61,
+      "rtf": 0.1505
+    },
+    "long": {
+      "ms": 1265.8,
+      "audio_s": 8.3,
+      "rtf": 0.1524
+    },
+    "sample_sr": 16000
+  },
+  {
+    "voice": "en_US-lessac-medium",
+    "threads": 4,
+    "short": {
+      "ms": 412.7,
+      "audio_s": 1.9,
+      "rtf": 0.2168
+    },
+    "long": {
+      "ms": 1377.1,
+      "audio_s": 6.75,
+      "rtf": 0.2042
+    },
+    "sample_sr": 22050
+  }
+]

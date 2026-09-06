@@ -1,0 +1,18 @@
+loading models...
+starting MCP servers...
+  10 tools from 4 servers
+
+[1mAegrys ready.[0m Speak any time — including while I'm talking. Ctrl-C to quit.
+
+  [33myou:[0m Thank you.
+  [32maegrys:[0m You're welcome.
+  [2mturn 2 | llm_tok1 7318ms | tts1 76ms | text=Thank you.[0m
+  [33myou:[0m What appears before board takes me.
+  [32maegrys:[0m Before a board, there's usually a wall.
+  [2mturn 4 | llm_tok1 1162ms | tts1 159ms | text=What appears before board takes me.[0m
+  [33myou:[0m problem this will be two months September.
+  [32maegrys:[0m Two months from September would be November.
+  [2mturn 6 | llm_tok1 1269ms | tts1 155ms | text=problem this will be two months September.[0m
+  [33myou:[0m Thank you very much.
+  [32maegrys:[0m You're welcome.
+  [2mturn 7 | llm_tok1 1249ms | tts1 65ms | text=Thank you very much.[0m

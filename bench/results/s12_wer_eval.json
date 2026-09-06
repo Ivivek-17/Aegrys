@@ -1,0 +1,26 @@
+[
+  {
+    "model": "tiny.en",
+    "wer": 0.0434,
+    "errors": 116,
+    "words": 2671,
+    "median_ms": 3434.6,
+    "n": 120
+  },
+  {
+    "model": "base.en",
+    "wer": 0.0356,
+    "errors": 95,
+    "words": 2671,
+    "median_ms": 6382.1,
+    "n": 120
+  },
+  {
+    "model": "small.en",
+    "wer": 0.024,
+    "errors": 64,
+    "words": 2671,
+    "median_ms": 7468.6,
+    "n": 120
+  }
+]

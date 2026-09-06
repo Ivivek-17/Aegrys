@@ -1,0 +1,44 @@
+warming LLM (load into RAM, pin keep_alive)...
+  warm-up: load 6829 ms, TTFT 7490 ms
+preloading TTS/STT/VAD sessions...
+  done
+
+=== baseline (before) ===
+LLM solo t=6 [pre]               LLM 15.57 tok/s TTFT   103ms
+
+=== designed overlap: LLM + TTS ===
+LLM t=6 + TTS t=2                LLM 14.17 tok/s TTFT    93ms | TTS RTF 0.134/p95 0.153
+LLM t=6 + TTS t=4                LLM 12.86 tok/s TTFT   123ms | TTS RTF 0.120/p95 0.132
+LLM t=4 + TTS t=2                LLM 11.84 tok/s TTFT  7920ms [!load 7150ms] | TTS RTF 0.151/p95 0.195
+LLM t=8 + TTS t=2                LLM 13.62 tok/s TTFT  6669ms [!load 6107ms] | TTS RTF 0.155/p95 0.185
+
+=== response phase: LLM + TTS + VAD ===
+LLM t=6 + TTS t=2 + VAD          LLM 13.26 tok/s TTFT  7231ms [!load 6558ms] | TTS RTF 0.158/p95 0.175 | VAD p99 1.61ms jit +1.0/+2.6ms
+LLM t=4 + TTS t=2 + VAD          LLM 11.42 tok/s TTFT  7120ms [!load 6319ms] | TTS RTF 0.166/p95 0.193 | VAD p99 1.69ms jit +1.2/+2.3ms
+
+=== worst case: + STT (barge-in mid-response) ===
+all four (6/2/2)                 LLM 10.59 tok/s TTFT  9398ms [!load 8648ms] | TTS RTF 0.185/p95 0.209 | STT 1257ms | VAD p99 2.85ms jit +2.8/+13.8ms
+all four (4/2/2)                 LLM 10.59 tok/s TTFT  8758ms [!load 7169ms] | TTS RTF 0.188/p95 0.229 | STT 1309ms | VAD p99 2.27ms jit +2.0/+6.2ms
+
+=== baseline (after, drift check) ===
+LLM solo t=6 [post]              LLM 12.46 tok/s TTFT  7539ms [!load 6828ms]
+
+==============================================================================
+baseline pre 15.57 / post 12.46 tok/s (-20.0% drift)
+using mean baseline 14.02 tok/s
+
+scenario                          tok/s  vs base  TTS RTF  VADjit
+LLM solo t=6 [pre]                15.57   +11.1%      nan     nan
+LLM t=6 + TTS t=2                 14.17    +1.1%    0.134     nan
+LLM t=6 + TTS t=4                 12.86    -8.2%    0.120     nan
+LLM t=4 + TTS t=2                 11.84   -15.5%    0.151     nan
+LLM t=8 + TTS t=2                 13.62    -2.8%    0.155     nan
+LLM t=6 + TTS t=2 + VAD           13.26    -5.4%    0.158    1.01
+LLM t=4 + TTS t=2 + VAD           11.42   -18.5%    0.166    1.23
+all four (6/2/2)                  10.59   -24.4%    0.185    2.78
+all four (4/2/2)                  10.59   -24.4%    0.188    2.00
+LLM solo t=6 [post]               12.46   -11.1%      nan     nan
+
+worst TTS RTF p95      : 0.229  PASS (must be < 1.0)
+worst VAD jitter p99   : +2.78 ms  PASS (must be << 32 ms)
+WARNING: model reloaded during: ['LLM t=4 + TTS t=2', 'LLM t=8 + TTS t=2', 'LLM t=6 + TTS t=2 + VAD', 'LLM t=4 + TTS t=2 + VAD', 'all four (6/2/2)', 'all four (4/2/2)', 'LLM solo t=6 [post]'] - results suspect

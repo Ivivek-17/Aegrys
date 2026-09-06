@@ -1,0 +1,10 @@
+=== fp32 vs int8 across intra_op threads ===
+  FAIL kokoro-v1.0.onnx         intra=2     4151 ms  RTF  2.186  (load 991 ms)
+  FAIL kokoro-v1.0.onnx         intra=4     2745 ms  RTF  1.446  (load 2655 ms)
+  FAIL kokoro-v1.0.onnx         intra=6     2003 ms  RTF  1.055  (load 2920 ms)
+  FAIL kokoro-v1.0.int8.onnx    intra=2    10185 ms  RTF  5.425  (load 2642 ms)
+  FAIL kokoro-v1.0.int8.onnx    intra=4     8740 ms  RTF  4.655  (load 2709 ms)
+  FAIL kokoro-v1.0.int8.onnx    intra=6     6702 ms  RTF  3.570  (load 2145 ms)
+
+best: kokoro-v1.0.onnx intra=6 RTF 1.055 (2003 ms)
+S1c: 0/6 configs under RTF 0.6

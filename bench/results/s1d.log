@@ -1,0 +1,9 @@
+=== Piper TTS (R2 fallback) ===
+  PASS en_US-amy-low          short     393 ms ->  2.61s audio   RTF 0.151
+  PASS en_US-amy-low          long     1266 ms ->  8.30s audio   RTF 0.152
+  PASS en_US-lessac-medium    short     413 ms ->  1.90s audio   RTF 0.217
+  PASS en_US-lessac-medium    long     1377 ms ->  6.75s audio   RTF 0.204
+
+best: en_US-amy-low RTF 0.150 (393 ms for 2.61s audio)
+=> 7.0x faster than Kokoro fp32 best (RTF 1.055)
+S1d: 2/2 voices under RTF 0.6

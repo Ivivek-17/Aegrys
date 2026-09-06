@@ -1,0 +1,167 @@
+[
+  {
+    "model": "distil-small.en",
+    "beam": 1,
+    "threads": 2,
+    "dur_s": 3,
+    "median_ms": 3071.6,
+    "min_ms": 3017.2,
+    "rtf": 1.0239,
+    "load_ms": 14820.8,
+    "cold_ms": 3461.3
+  },
+  {
+    "model": "distil-small.en",
+    "beam": 1,
+    "threads": 2,
+    "dur_s": 5,
+    "median_ms": 3570.6,
+    "min_ms": 3402.2,
+    "rtf": 0.7141,
+    "load_ms": 14820.8,
+    "cold_ms": 3461.3
+  },
+  {
+    "model": "distil-small.en",
+    "beam": 1,
+    "threads": 2,
+    "dur_s": 10,
+    "median_ms": 3062.3,
+    "min_ms": 2731.7,
+    "rtf": 0.3062,
+    "load_ms": 14820.8,
+    "cold_ms": 3461.3
+  },
+  {
+    "model": "distil-small.en",
+    "beam": 1,
+    "threads": 4,
+    "dur_s": 3,
+    "median_ms": 2641.1,
+    "min_ms": 2611.6,
+    "rtf": 0.8804,
+    "load_ms": 1381.5,
+    "cold_ms": 2682.9
+  },
+  {
+    "model": "distil-small.en",
+    "beam": 1,
+    "threads": 4,
+    "dur_s": 5,
+    "median_ms": 2690.7,
+    "min_ms": 2679.0,
+    "rtf": 0.5381,
+    "load_ms": 1381.5,
+    "cold_ms": 2682.9
+  },
+  {
+    "model": "distil-small.en",
+    "beam": 1,
+    "threads": 4,
+    "dur_s": 10,
+    "median_ms": 2794.6,
+    "min_ms": 2792.8,
+    "rtf": 0.2795,
+    "load_ms": 1381.5,
+    "cold_ms": 2682.9
+  },
+  {
+    "model": "distil-small.en",
+    "beam": 3,
+    "threads": 4,
+    "dur_s": 3,
+    "median_ms": 2719.0,
+    "min_ms": 2632.7,
+    "rtf": 0.9063,
+    "load_ms": 1199.3,
+    "cold_ms": 2723.9
+  },
+  {
+    "model": "distil-small.en",
+    "beam": 3,
+    "threads": 4,
+    "dur_s": 5,
+    "median_ms": 2908.4,
+    "min_ms": 2817.1,
+    "rtf": 0.5817,
+    "load_ms": 1199.3,
+    "cold_ms": 2723.9
+  },
+  {
+    "model": "distil-small.en",
+    "beam": 3,
+    "threads": 4,
+    "dur_s": 10,
+    "median_ms": 2663.1,
+    "min_ms": 2610.7,
+    "rtf": 0.2663,
+    "load_ms": 1199.3,
+    "cold_ms": 2723.9
+  },
+  {
+    "model": "base.en",
+    "beam": 1,
+    "threads": 4,
+    "dur_s": 3,
+    "median_ms": 739.1,
+    "min_ms": 658.3,
+    "rtf": 0.2464,
+    "load_ms": 9886.3,
+    "cold_ms": 701.6
+  },
+  {
+    "model": "base.en",
+    "beam": 1,
+    "threads": 4,
+    "dur_s": 5,
+    "median_ms": 865.0,
+    "min_ms": 845.6,
+    "rtf": 0.173,
+    "load_ms": 9886.3,
+    "cold_ms": 701.6
+  },
+  {
+    "model": "base.en",
+    "beam": 1,
+    "threads": 4,
+    "dur_s": 10,
+    "median_ms": 866.1,
+    "min_ms": 862.1,
+    "rtf": 0.0866,
+    "load_ms": 9886.3,
+    "cold_ms": 701.6
+  },
+  {
+    "model": "small.en",
+    "beam": 1,
+    "threads": 4,
+    "dur_s": 3,
+    "median_ms": 2802.2,
+    "min_ms": 2723.8,
+    "rtf": 0.9341,
+    "load_ms": 18080.2,
+    "cold_ms": 2382.4
+  },
+  {
+    "model": "small.en",
+    "beam": 1,
+    "threads": 4,
+    "dur_s": 5,
+    "median_ms": 2872.0,
+    "min_ms": 2658.6,
+    "rtf": 0.5744,
+    "load_ms": 18080.2,
+    "cold_ms": 2382.4
+  },
+  {
+    "model": "small.en",
+    "beam": 1,
+    "threads": 4,
+    "dur_s": 10,
+    "median_ms": 3093.0,
+    "min_ms": 3005.3,
+    "rtf": 0.3093,
+    "load_ms": 18080.2,
+    "cold_ms": 2382.4
+  }
+]

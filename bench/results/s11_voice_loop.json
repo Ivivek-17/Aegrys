@@ -1,0 +1,46 @@
+[
+  {
+    "text": "set a timer for five minutes",
+    "heard": "Set a timer for 5 minutes.",
+    "exact": false,
+    "detected": true,
+    "captured_s": 3.07,
+    "listen_ms": 181.1,
+    "stt_ms": 939.7,
+    "route_ms": 14816.6,
+    "tool": "set_timer"
+  },
+  {
+    "text": "what is on my calendar today",
+    "heard": "What is on my calendar today?",
+    "exact": true,
+    "detected": true,
+    "captured_s": 2.69,
+    "listen_ms": 82.9,
+    "stt_ms": 910.0,
+    "route_ms": 3161.8,
+    "tool": "list_events"
+  },
+  {
+    "text": "remind me to call mom tomorrow",
+    "heard": "Remind me to call Mom tomorrow.",
+    "exact": true,
+    "detected": true,
+    "captured_s": 3.17,
+    "listen_ms": 110.0,
+    "stt_ms": 958.7,
+    "route_ms": 4590.2,
+    "tool": "add_reminder"
+  },
+  {
+    "text": "what is the capital of France",
+    "heard": "What is the capital of France?",
+    "exact": true,
+    "detected": true,
+    "captured_s": 2.72,
+    "listen_ms": 155.4,
+    "stt_ms": 986.0,
+    "route_ms": 883.4,
+    "tool": null
+  }
+]

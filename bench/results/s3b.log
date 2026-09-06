@@ -1,0 +1,16 @@
+speakers   : [12] Speakers (Realtek(R) Audio)
+loopback   : [23] Stereo Mix (Realtek HD Audio Stereo input)
+mic array  : [14] Microphone Array (Intel® Smart Sound Technology for Digital Microphones)
+
+playing a 2.0s 440 Hz tone at -6 dBFS (48000 Hz)...
+  loopback capture failed: PortAudioError: Error opening Stream: Illegal combination of I/O devices [PaErrorCode -9993]
+
+now measuring what the MIC hears from the same tone...
+  mic noise floor        :  -36.7 dBFS
+  mic during tone        :  -36.7 dBFS  (+0.0 dB)
+  440 Hz peak vs mean bin:   18.7 dB
+
+verdict:
+  Render path worked, yet the mic does NOT pick up the tone.
+  Consistent with hardware AEC / echo suppression on the mic array.
+  R1 looks genuinely mitigated, but confirm with a human test.

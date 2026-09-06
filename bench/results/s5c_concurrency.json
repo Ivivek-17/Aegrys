@@ -1,0 +1,92 @@
+[
+  {
+    "scenario": "baseline solo",
+    "decode_tok_s": 15.03,
+    "ttft_ms": 101.1,
+    "load_ms": 4.8,
+    "t": 1788641708.3570313
+  },
+  {
+    "scenario": "LLM + TTS t=2",
+    "decode_tok_s": 13.21,
+    "ttft_ms": 125.1,
+    "load_ms": 6.0,
+    "t": 1788641718.381698,
+    "tts_rtf_med": 0.138,
+    "tts_rtf_p95": 0.191,
+    "tts_n": 25,
+    "local_baseline": 13.86,
+    "degradation_pct": -4.7
+  },
+  {
+    "scenario": "baseline solo",
+    "decode_tok_s": 12.68,
+    "ttft_ms": 101.2,
+    "load_ms": 3.3,
+    "t": 1788641728.3500295
+  },
+  {
+    "scenario": "LLM + TTS t=4",
+    "decode_tok_s": 12.67,
+    "ttft_ms": 114.3,
+    "load_ms": 8.2,
+    "t": 1788641738.4379878,
+    "tts_rtf_med": 0.126,
+    "tts_rtf_p95": 0.141,
+    "tts_n": 29,
+    "local_baseline": 13.32,
+    "degradation_pct": -4.9
+  },
+  {
+    "scenario": "baseline solo",
+    "decode_tok_s": 13.96,
+    "ttft_ms": 109.3,
+    "load_ms": 7.7,
+    "t": 1788641747.5447783
+  },
+  {
+    "scenario": "LLM + TTS t=2 + VAD",
+    "decode_tok_s": 13.04,
+    "ttft_ms": 154.4,
+    "load_ms": 4.7,
+    "t": 1788641757.6555884,
+    "tts_rtf_med": 0.167,
+    "tts_rtf_p95": 0.183,
+    "tts_n": 22,
+    "vad_p99_ms": 2.122,
+    "vad_jit_p99": 1.25,
+    "vad_jit_max": 2.16,
+    "local_baseline": 14.03,
+    "degradation_pct": -7.1
+  },
+  {
+    "scenario": "baseline solo",
+    "decode_tok_s": 14.1,
+    "ttft_ms": 89.9,
+    "load_ms": 4.4,
+    "t": 1788641766.659662
+  },
+  {
+    "scenario": "LLM + TTS t=2 + STT t=2 + VAD",
+    "decode_tok_s": 12.27,
+    "ttft_ms": 109.5,
+    "load_ms": 4.6,
+    "t": 1788641777.095359,
+    "tts_rtf_med": 0.195,
+    "tts_rtf_p95": 0.223,
+    "tts_n": 20,
+    "stt_ms_med": 1305.1,
+    "vad_p99_ms": 1.826,
+    "vad_jit_p99": 2.1,
+    "vad_jit_max": 5.33,
+    "local_baseline": 14.03,
+    "degradation_pct": -12.5
+  },
+  {
+    "scenario": "baseline solo",
+    "decode_tok_s": 13.96,
+    "ttft_ms": 112.0,
+    "load_ms": 6.8,
+    "t": 1788641786.2071137
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "output": "Speakers (Realtek(R) Audio)",
+  "input": "Microphone Array (Intel\u00ae Smart Sound Technology for Digital Microphones)",
+  "mic_native_sr": 48000,
+  "spk_native_sr": 48000,
+  "baseline_dbfs": -28.9,
+  "echo_dbfs": -28.0,
+  "leak_db": 1.0,
+  "xcorr_peak": 0.059,
+  "lag_ms": -115.9,
+  "verdict": "PASS"
+}

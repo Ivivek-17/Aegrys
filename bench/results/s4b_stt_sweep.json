@@ -1,0 +1,130 @@
+[
+  {
+    "model": "tiny.en",
+    "threads": 2,
+    "without_timestamps": false,
+    "median_ms": 487.1,
+    "min_ms": 374.6,
+    "text": "And so my fellow Americans."
+  },
+  {
+    "model": "tiny.en",
+    "threads": 2,
+    "without_timestamps": true,
+    "median_ms": 670.5,
+    "min_ms": 603.9,
+    "text": "And so am I fellow Americans."
+  },
+  {
+    "model": "tiny.en",
+    "threads": 4,
+    "without_timestamps": false,
+    "median_ms": 392.3,
+    "min_ms": 363.6,
+    "text": "And so my fellow Americans."
+  },
+  {
+    "model": "tiny.en",
+    "threads": 4,
+    "without_timestamps": true,
+    "median_ms": 398.6,
+    "min_ms": 345.5,
+    "text": "And so am I fellow Americans."
+  },
+  {
+    "model": "tiny.en",
+    "threads": 6,
+    "without_timestamps": false,
+    "median_ms": 314.2,
+    "min_ms": 270.7,
+    "text": "And so my fellow Americans."
+  },
+  {
+    "model": "tiny.en",
+    "threads": 6,
+    "without_timestamps": true,
+    "median_ms": 294.3,
+    "min_ms": 282.1,
+    "text": "And so am I fellow Americans."
+  },
+  {
+    "model": "tiny.en",
+    "threads": 8,
+    "without_timestamps": false,
+    "median_ms": 353.2,
+    "min_ms": 271.3,
+    "text": "And so my fellow Americans."
+  },
+  {
+    "model": "tiny.en",
+    "threads": 8,
+    "without_timestamps": true,
+    "median_ms": 371.0,
+    "min_ms": 369.2,
+    "text": "And so am I fellow Americans."
+  },
+  {
+    "model": "base.en",
+    "threads": 2,
+    "without_timestamps": false,
+    "median_ms": 1235.5,
+    "min_ms": 1103.7,
+    "text": "And so my fellow Americans!"
+  },
+  {
+    "model": "base.en",
+    "threads": 2,
+    "without_timestamps": true,
+    "median_ms": 1194.3,
+    "min_ms": 1126.3,
+    "text": "And so my fellow Americans!"
+  },
+  {
+    "model": "base.en",
+    "threads": 4,
+    "without_timestamps": false,
+    "median_ms": 1069.0,
+    "min_ms": 991.8,
+    "text": "And so my fellow Americans!"
+  },
+  {
+    "model": "base.en",
+    "threads": 4,
+    "without_timestamps": true,
+    "median_ms": 1006.8,
+    "min_ms": 982.7,
+    "text": "And so my fellow Americans!"
+  },
+  {
+    "model": "base.en",
+    "threads": 6,
+    "without_timestamps": false,
+    "median_ms": 889.9,
+    "min_ms": 885.0,
+    "text": "And so my fellow Americans!"
+  },
+  {
+    "model": "base.en",
+    "threads": 6,
+    "without_timestamps": true,
+    "median_ms": 866.2,
+    "min_ms": 864.4,
+    "text": "And so my fellow Americans!"
+  },
+  {
+    "model": "base.en",
+    "threads": 8,
+    "without_timestamps": false,
+    "median_ms": 753.2,
+    "min_ms": 747.6,
+    "text": "And so my fellow Americans!"
+  },
+  {
+    "model": "base.en",
+    "threads": 8,
+    "without_timestamps": true,
+    "median_ms": 760.5,
+    "min_ms": 728.1,
+    "text": "And so my fellow Americans!"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "model": "tiny.en",
+    "chunk_length": null,
+    "median_ms": 327.7,
+    "wer": 0.0,
+    "text": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country."
+  },
+  {
+    "model": "tiny.en",
+    "chunk_length": 10,
+    "median_ms": 690.3,
+    "wer": 0.0,
+    "text": "And so my fellow Americans ask not what your country can do for you. Ask what you can do for your...  country."
+  },
+  {
+    "model": "tiny.en",
+    "chunk_length": 15,
+    "median_ms": 335.2,
+    "wer": 0.0,
+    "text": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country."
+  },
+  {
+    "model": "base.en",
+    "chunk_length": null,
+    "median_ms": 1127.4,
+    "wer": 0.0,
+    "text": "And so my fellow Americans ask not what your country can do for you, ask what you can do for your country."
+  },
+  {
+    "model": "base.en",
+    "chunk_length": 10,
+    "median_ms": 1878.7,
+    "wer": 0.0,
+    "text": "And so my fellow Americans, ask not what your country can do for you, ask what you can do for your  country."
+  },
+  {
+    "model": "base.en",
+    "chunk_length": 15,
+    "median_ms": 1025.3,
+    "wer": 0.0,
+    "text": "And so my fellow Americans ask not what your country can do for you, ask what you can do for your country."
+  },
+  {
+    "model": "small.en",
+    "chunk_length": null,
+    "median_ms": 2890.9,
+    "wer": 0.0,
+    "text": "And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country."
+  },
+  {
+    "model": "small.en",
+    "chunk_length": 10,
+    "median_ms": 5454.4,
+    "wer": 0.0455,
+    "text": "And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country.  country."
+  },
+  {
+    "model": "small.en",
+    "chunk_length": 15,
+    "median_ms": 3000.4,
+    "wer": 0.0,
+    "text": "And so my fellow Americans, ask not what your country can do for you, ask what you can do for your country."
+  }
+]

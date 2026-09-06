@@ -1,0 +1,166 @@
+[
+  {
+    "mode": "router",
+    "rows": [
+      {
+        "text": "set a timer for five minutes",
+        "expected": "set_timer",
+        "got": "set_timer",
+        "hit": true,
+        "ttfa_ms": 1789.4,
+        "wall_ms": 3509.5,
+        "reply": "Timer set for five minutes."
+      },
+      {
+        "text": "what is on my calendar today",
+        "expected": "list_events",
+        "got": "list_events",
+        "hit": true,
+        "ttfa_ms": 1988.5,
+        "wall_ms": 5340.2,
+        "reply": "Today has two events: design review at 10 AM and one on one "
+      },
+      {
+        "text": "remind me to call mom tomorrow at six",
+        "expected": "add_reminder",
+        "got": "add_reminder",
+        "hit": true,
+        "ttfa_ms": 2968.3,
+        "wall_ms": 5259.8,
+        "reply": "Reminder set: Call mom at 6 PM tomorrow."
+      },
+      {
+        "text": "hello how are you",
+        "expected": null,
+        "got": null,
+        "hit": true,
+        "ttfa_ms": 1816.1,
+        "wall_ms": 1822.7,
+        "reply": "I'm good, how can I assist you today?"
+      },
+      {
+        "text": "summarize my email",
+        "expected": "summarize_email",
+        "got": "summarize_email",
+        "hit": true,
+        "ttfa_ms": 2691.6,
+        "wall_ms": 8502.9,
+        "reply": "Alice has Q3 numbers ready, newsletter has links, Bob invite"
+      },
+      {
+        "text": "timer for thirty seconds",
+        "expected": "set_timer",
+        "got": "set_timer",
+        "hit": true,
+        "ttfa_ms": 2009.5,
+        "wall_ms": 4382.8,
+        "reply": "Timer set for 30 seconds."
+      },
+      {
+        "text": "what do I have scheduled tomorrow",
+        "expected": "list_events",
+        "got": "list_events",
+        "hit": true,
+        "ttfa_ms": 2348.3,
+        "wall_ms": 6731.8,
+        "reply": "You have an event at 9: 15 AM for a standup and a dentist ap"
+      },
+      {
+        "text": "tell me a joke",
+        "expected": null,
+        "got": null,
+        "hit": true,
+        "ttfa_ms": 1741.8,
+        "wall_ms": 2250.6,
+        "reply": "Why don't scientists trust atoms? Because they make up every"
+      }
+    ],
+    "correct": 8,
+    "total": 8,
+    "ttfa_median": 1999.0,
+    "ttfa_max": 2968.3,
+    "wall_median": 4821.3
+  },
+  {
+    "mode": "native",
+    "rows": [
+      {
+        "text": "set a timer for five minutes",
+        "expected": "set_timer",
+        "got": "set_timer",
+        "hit": true,
+        "ttfa_ms": 2797.3,
+        "wall_ms": 5284.4,
+        "reply": "Timer set for five minutes."
+      },
+      {
+        "text": "what is on my calendar today",
+        "expected": "list_events",
+        "got": "list_events",
+        "hit": true,
+        "ttfa_ms": 21541.1,
+        "wall_ms": 25963.7,
+        "reply": "Today has two events: design review at 10 AM and one on one "
+      },
+      {
+        "text": "remind me to call mom tomorrow at six",
+        "expected": "add_reminder",
+        "got": "add_reminder",
+        "hit": true,
+        "ttfa_ms": 3171.8,
+        "wall_ms": 5799.5,
+        "reply": "Reminder set: call mom tomorrow at 6."
+      },
+      {
+        "text": "hello how are you",
+        "expected": null,
+        "got": null,
+        "hit": true,
+        "ttfa_ms": 20248.8,
+        "wall_ms": 20919.4,
+        "reply": "I'm Aegrys, a voice assistant. How can I help you today?"
+      },
+      {
+        "text": "summarize my email",
+        "expected": "summarize_email",
+        "got": "summarize_email",
+        "hit": true,
+        "ttfa_ms": 2096.6,
+        "wall_ms": 9529.0,
+        "reply": "Alice has Q3 numbers ready, newsletter has links, Bob invite"
+      },
+      {
+        "text": "timer for thirty seconds",
+        "expected": "set_timer",
+        "got": "set_timer",
+        "hit": true,
+        "ttfa_ms": 2568.6,
+        "wall_ms": 5520.0,
+        "reply": "Timer set for 30 seconds."
+      },
+      {
+        "text": "what do I have scheduled tomorrow",
+        "expected": "list_events",
+        "got": "list_events",
+        "hit": true,
+        "ttfa_ms": 23630.5,
+        "wall_ms": 27821.2,
+        "reply": "You have an event at 9: 15 AM and another at 4:00 PM tomorro"
+      },
+      {
+        "text": "tell me a joke",
+        "expected": null,
+        "got": null,
+        "hit": true,
+        "ttfa_ms": 1335.5,
+        "wall_ms": 2157.8,
+        "reply": "Why was the math book sad? \u56e0\u4e3a\u5b83\u53ea\u6709\u89e3\uff08\u9875\uff09\u3002"
+      }
+    ],
+    "correct": 8,
+    "total": 8,
+    "ttfa_median": 2984.6,
+    "ttfa_max": 23630.5,
+    "wall_median": 7664.2
+  }
+]

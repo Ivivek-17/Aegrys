@@ -1,0 +1,10 @@
+[   0.00s] importing espeakng_loader + phonemizer
+[   0.47s] importing kokoro_onnx
+[   0.58s] constructing Kokoro (loads 92MB int8 onnx + voices)
+[   1.53s] Kokoro ready
+[   1.53s] synth #1 (cold)
+[   7.86s] cold: 6331 ms -> 1.88s audio @ 24000Hz  RTF 3.373
+[  18.31s] warm #1: 10447 ms -> 1.88s audio  RTF 5.565
+[  28.81s] warm #2: 10503 ms -> 1.88s audio  RTF 5.594
+[  39.25s] warm #3: 10439 ms -> 1.88s audio  RTF 5.561
+[  39.29s] wrote tts_sample.wav (1.88s)

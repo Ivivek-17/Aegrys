@@ -1,0 +1,48 @@
+{
+  "router_encodings": [
+    {
+      "variant": "full json {tool,args}",
+      "median_ms": 2060.44244999066,
+      "median_tokens": 22.5,
+      "correct": 9,
+      "total": 10
+    },
+    {
+      "variant": "tool only  {tool}",
+      "median_ms": 1300.874799999292,
+      "median_tokens": 10.0,
+      "correct": 9,
+      "total": 10
+    },
+    {
+      "variant": "tool only + sharp sys",
+      "median_ms": 1096.1810000007972,
+      "median_tokens": 9.0,
+      "correct": 10,
+      "total": 10
+    }
+  ],
+  "streaming": [
+    {
+      "prompt": "The timer is set. Confirm this to the user in one short sentence.",
+      "ttft_ms": 1056.7,
+      "first_sentence_ms": 1279.3,
+      "total_ms": 1743.4,
+      "text": "Timer is set. Ready when you are."
+    },
+    {
+      "prompt": "Tell the user it is sunny and 22 degrees, in one short sentence.",
+      "ttft_ms": 659.3,
+      "first_sentence_ms": 1500.3,
+      "total_ms": 1573.9,
+      "text": "It's sunny with a temperature of 22 degrees."
+    },
+    {
+      "prompt": "Greet the user briefly and ask how you can help.",
+      "ttft_ms": 513.5,
+      "first_sentence_ms": 586.7,
+      "total_ms": 1201.5,
+      "text": "Hello! How may I assist you today?"
+    }
+  ]
+}

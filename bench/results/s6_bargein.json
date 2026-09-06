@@ -1,0 +1,38 @@
+[
+  {
+    "trial": 1,
+    "flush_ms": 0.245,
+    "queued_before_ms": 2336.0,
+    "queued_after_ms": 0.0,
+    "worst_tail_ms": 30,
+    "tokens_at_barge": 11,
+    "tokens_final": 11,
+    "tokens_after_barge": 0,
+    "respond_returned_ms": 29.8,
+    "thread_stopped": true
+  },
+  {
+    "trial": 2,
+    "flush_ms": 0.197,
+    "queued_before_ms": 2352.0,
+    "queued_after_ms": 0.0,
+    "worst_tail_ms": 30,
+    "tokens_at_barge": 11,
+    "tokens_final": 11,
+    "tokens_after_barge": 0,
+    "respond_returned_ms": 2.1,
+    "thread_stopped": true
+  },
+  {
+    "trial": 3,
+    "flush_ms": 0.227,
+    "queued_before_ms": 2320.0,
+    "queued_after_ms": 0.0,
+    "worst_tail_ms": 30,
+    "tokens_at_barge": 12,
+    "tokens_final": 12,
+    "tokens_after_barge": 0,
+    "respond_returned_ms": 54.6,
+    "thread_stopped": true
+  }
+]

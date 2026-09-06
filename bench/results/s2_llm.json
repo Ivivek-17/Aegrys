@@ -1,0 +1,109 @@
+{
+  "thread_sweep": [
+    {
+      "threads": 2,
+      "decode_tok_s": 9.33,
+      "prefill_tok_s": 226.2
+    },
+    {
+      "threads": 4,
+      "decode_tok_s": 11.344999999999999,
+      "prefill_tok_s": 209.53
+    },
+    {
+      "threads": 6,
+      "decode_tok_s": 12.665,
+      "prefill_tok_s": 258.63
+    },
+    {
+      "threads": 8,
+      "decode_tok_s": 11.04,
+      "prefill_tok_s": 227.89499999999998
+    },
+    {
+      "threads": 12,
+      "decode_tok_s": 10.21,
+      "prefill_tok_s": 211.60000000000002
+    }
+  ],
+  "sustained": {
+    "runs": [
+      12.89,
+      12.77,
+      13.48,
+      13.37,
+      11.93,
+      12.32
+    ],
+    "drift_pct": 4.4,
+    "threads": 6
+  },
+  "router_latency_ms": [
+    3278.5,
+    2457.6,
+    1884.6,
+    1668.8
+  ],
+  "routing": {
+    "correct": 7,
+    "total": 8,
+    "cases": [
+      {
+        "text": "set a timer for five minutes",
+        "expected": "set_timer",
+        "got": "set_timer",
+        "valid_json": true,
+        "ms": 2116.7
+      },
+      {
+        "text": "remind me to call mom tomorrow at 6",
+        "expected": "add_reminder",
+        "got": "set_timer",
+        "valid_json": true,
+        "ms": 2434.5
+      },
+      {
+        "text": "what's on my calendar today",
+        "expected": "list_events",
+        "got": "list_events",
+        "valid_json": true,
+        "ms": 1816.4
+      },
+      {
+        "text": "summarize my last three emails",
+        "expected": "summarize_email",
+        "got": "summarize_email",
+        "valid_json": true,
+        "ms": 1666.1
+      },
+      {
+        "text": "hey how are you doing",
+        "expected": "respond",
+        "got": "respond",
+        "valid_json": true,
+        "ms": 2979.5
+      },
+      {
+        "text": "timer 30 seconds please",
+        "expected": "set_timer",
+        "got": "set_timer",
+        "valid_json": true,
+        "ms": 2044.4
+      },
+      {
+        "text": "what do I have scheduled for friday",
+        "expected": "list_events",
+        "got": "list_events",
+        "valid_json": true,
+        "ms": 2201.6
+      },
+      {
+        "text": "tell me a joke",
+        "expected": "respond",
+        "got": "respond",
+        "valid_json": true,
+        "ms": 2288.2
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+output: [12] Speakers (Realtek(R) Audio) (Windows WASAPI)
+input : [14] Microphone Array (Intel® Smart Sound Technology for Digital Microphones) (Windows WASAPI)
+native rates: mic 48000 Hz, speakers 48000 Hz (WASAPI does not resample)
+
+[1/3] recording 2s of silence (baseline room noise)...
+  baseline noise floor:  -28.9 dBFS
+
+[2/3] full-duplex: playing 1.97s of TTS through speakers while recording...
+  full-duplex opened OK, 4.10s wall
+  mic level during playback:  -28.0 dBFS
+  echo leak above noise floor:   +1.0 dB
+  peak correlation with played signal: 0.059 at lag -5563 samples (-116 ms)
+
+[3/3] verdict
+  PASS: playback is only 1.0 dB above the noise floor.
+  The mic barely hears the speakers (likely hardware AEC / noise
+  suppression in the Intel Smart Sound mic array).
+  => a simple energy gate will separate self-audio from speech.
+
+S3 PASS

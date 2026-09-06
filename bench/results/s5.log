@@ -1,0 +1,32 @@
+=== solo baselines ===
+LLM solo (t=6)                     LLM  7.65 tok/s (TTFT  7847 ms)
+
+=== designed overlap: LLM + TTS ===
+LLM t=6 + TTS t=2                  LLM 14.73 tok/s (TTFT    90 ms) | TTS RTF 0.118
+LLM t=6 + TTS t=4                  LLM 11.97 tok/s (TTFT   117 ms) | TTS RTF 0.091
+LLM t=4 + TTS t=4                  LLM  5.76 tok/s (TTFT 10810 ms) | TTS RTF 0.109
+LLM t=8 + TTS t=2                  LLM  7.28 tok/s (TTFT  7347 ms) | TTS RTF 0.137
+
+=== response phase: LLM + TTS + VAD (barge-in listening) ===
+LLM t=6 + TTS t=2 + VAD            LLM  6.41 tok/s (TTFT  7306 ms) | TTS RTF 0.142 | VAD p99 2.56 ms jitter p99 +2.4 ms
+LLM t=4 + TTS t=2 + VAD            LLM  6.15 tok/s (TTFT  8356 ms) | TTS RTF 0.154 | VAD p99 1.80 ms jitter p99 +1.4 ms
+
+=== worst case: LLM + TTS + STT + VAD ===
+all four (6/2/2)                   LLM  5.97 tok/s (TTFT  9672 ms) | TTS RTF 0.165 | STT 1161 ms | VAD p99 2.22 ms jitter p99 +2.1 ms
+all four (4/2/2)                   LLM  6.12 tok/s (TTFT  8740 ms) | TTS RTF 0.159 | STT 1191 ms | VAD p99 2.16 ms jitter p99 +1.8 ms
+
+==========================================================================
+solo LLM baseline: 7.65 tok/s (S2 measured 12.66 with num_thread=6)
+scenario                             tok/s   vs solo   TTS RTF   VAD p99
+LLM solo (t=6)                        7.65     +0.0%       nan       nan
+LLM t=6 + TTS t=2                    14.73    +92.5%     0.118       nan
+LLM t=6 + TTS t=4                    11.97    +56.5%     0.091       nan
+LLM t=4 + TTS t=4                     5.76    -24.7%     0.109       nan
+LLM t=8 + TTS t=2                     7.28     -4.8%     0.137       nan
+LLM t=6 + TTS t=2 + VAD               6.41    -16.2%     0.142      2.56
+LLM t=4 + TTS t=2 + VAD               6.15    -19.6%     0.154      1.80
+all four (6/2/2)                      5.97    -22.0%     0.165      2.22
+all four (4/2/2)                      6.12    -20.0%     0.159      2.16
+
+worst TTS RTF p95 under load : 0.219 (PASS - must stay < 1.0)
+worst VAD pacing jitter p99  : +2.4 ms (PASS - must stay << 32 ms)

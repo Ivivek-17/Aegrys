@@ -1,0 +1,156 @@
+[
+  {
+    "text": "set a timer for five minutes",
+    "expected": "set_timer",
+    "got": "set_timer",
+    "hit": true,
+    "ms": 4801.1
+  },
+  {
+    "text": "timer for thirty seconds",
+    "expected": "set_timer",
+    "got": "set_timer",
+    "hit": true,
+    "ms": 1034.2
+  },
+  {
+    "text": "give me a ten minute timer",
+    "expected": "set_timer",
+    "got": "set_timer",
+    "hit": true,
+    "ms": 1242.6
+  },
+  {
+    "text": "remind me to call mom tomorrow at six",
+    "expected": "add_reminder",
+    "got": "add_reminder",
+    "hit": true,
+    "ms": 1502.3
+  },
+  {
+    "text": "remind me to take out the bins",
+    "expected": "add_reminder",
+    "got": "add_reminder",
+    "hit": true,
+    "ms": 1183.9
+  },
+  {
+    "text": "what is on my calendar today",
+    "expected": "list_events",
+    "got": "list_events",
+    "hit": true,
+    "ms": 1182.9
+  },
+  {
+    "text": "what do I have scheduled tomorrow",
+    "expected": "list_events",
+    "got": "list_events",
+    "hit": true,
+    "ms": 973.9
+  },
+  {
+    "text": "what's my next meeting",
+    "expected": "next_event",
+    "got": "next_event",
+    "hit": true,
+    "ms": 1031.1
+  },
+  {
+    "text": "summarize my email",
+    "expected": "summarize_email",
+    "got": "summarize_email",
+    "hit": true,
+    "ms": 1421.8
+  },
+  {
+    "text": "read me my messages",
+    "expected": "summarize_email",
+    "got": "summarize_email",
+    "hit": true,
+    "ms": 1372.9
+  },
+  {
+    "text": "cancel the timer",
+    "expected": "cancel_timer",
+    "got": "cancel_timer",
+    "hit": true,
+    "ms": 1027.2
+  },
+  {
+    "text": "what reminders do I have",
+    "expected": "list_reminders",
+    "got": "list_reminders",
+    "hit": true,
+    "ms": 1135.3
+  },
+  {
+    "text": "thanks that is all",
+    "expected": null,
+    "got": null,
+    "hit": true,
+    "ms": 1092.7
+  },
+  {
+    "text": "thank you",
+    "expected": null,
+    "got": null,
+    "hit": true,
+    "ms": 1061.7
+  },
+  {
+    "text": "never mind",
+    "expected": null,
+    "got": null,
+    "hit": true,
+    "ms": 1074.4
+  },
+  {
+    "text": "ok cool",
+    "expected": null,
+    "got": null,
+    "hit": true,
+    "ms": 872.6
+  },
+  {
+    "text": "hello how are you",
+    "expected": null,
+    "got": null,
+    "hit": true,
+    "ms": 824.6
+  },
+  {
+    "text": "goodbye",
+    "expected": null,
+    "got": null,
+    "hit": true,
+    "ms": 909.0
+  },
+  {
+    "text": "tell me a joke",
+    "expected": null,
+    "got": null,
+    "hit": true,
+    "ms": 795.2
+  },
+  {
+    "text": "what is the capital of France",
+    "expected": null,
+    "got": null,
+    "hit": true,
+    "ms": 921.5
+  },
+  {
+    "text": "who won the world cup in 1998",
+    "expected": null,
+    "got": null,
+    "hit": true,
+    "ms": 1078.8
+  },
+  {
+    "text": "that's wrong, try again",
+    "expected": null,
+    "got": null,
+    "hit": true,
+    "ms": 845.6
+  }
+]
