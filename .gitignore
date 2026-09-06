@@ -19,3 +19,6 @@ bench/*.log
 
 # Trace output
 *.jsonl
+
+# Static site build output (regenerate with scripts/build_site.py)
+dist/

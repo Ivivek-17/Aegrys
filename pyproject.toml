@@ -14,8 +14,15 @@ dependencies = [
     "mcp>=1.0",
 ]
 
+[project.optional-dependencies]
+dash = ["fastapi>=0.115", "uvicorn[standard]>=0.30"]
+
 [project.scripts]
 aegrys = "aegrys.cli:main"
+aegrys-dash = "aegrys.web.server:main"
 
 [tool.setuptools.packages.find]
 include = ["aegrys*"]
+
+[tool.setuptools.package-data]
+"aegrys.web" = ["static/*"]

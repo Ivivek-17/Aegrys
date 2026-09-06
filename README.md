@@ -231,6 +231,39 @@ Or without a microphone:
 python -m aegrys.cli --text
 ```
 
+## Dashboard
+
+A black-and-white terminal-themed control panel and documentation site, in one
+build:
+
+```bash
+uv pip install -e ".[dash]"
+aegrys-dash        # http://127.0.0.1:7860
+```
+
+Five screens: **CONTROL** (start/stop, preflight checks, run options),
+**MONITOR** (live console, per-turn latency, a text prompt for keyboard input),
+**SETUP**, **ARCHITECTURE**, **BENCHMARKS**. Press `1`–`5` to switch.
+
+The control API binds to `127.0.0.1` only. It spawns processes and has no
+authentication — do not expose it to a network.
+
+### Hosting the docs on your own domain
+
+```bash
+python scripts/build_site.py --serve
+```
+
+That writes `dist/` — about 74 KB of static HTML, CSS and JS with no build step
+and no dependencies. Deploy it to GitHub Pages, Netlify, Cloudflare Pages, or any
+static host.
+
+The same files serve both roles. Hosted statically there is no control API, so the
+page probes for it, finds nothing, and switches to **docs mode**: setup,
+architecture and benchmarks work fully, while the control screens explain that
+process control needs a local install. A website cannot start a program on a
+visitor's machine, and this one does not pretend it can.
+
 Useful flags: `--devices` (list audio devices), `--say "..."` (one turn),
 `--no-tools`, `--no-barge-in`, `--stt-model base.en`, `--trace-file traces.jsonl`.
 
