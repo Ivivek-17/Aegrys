@@ -22,3 +22,8 @@ bench/*.log
 
 # Static site build output (regenerate with scripts/build_site.py)
 dist/
+
+# Personal learning material — kept local, not part of the published project.
+# The handbook and exercise set are study aids, not shipped documentation.
+docs/handbook/
+exercises/
