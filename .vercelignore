@@ -1,0 +1,42 @@
+# Vercel deploys the DOCS SITE only — aegrys/web/static/ — and nothing else.
+#
+# The dashboard's control API (aegrys/web/server.py) must never be deployed. It
+# spawns processes, writes to a child process's stdin, and reports local
+# filesystem paths, with no authentication of any kind. That is acceptable bound
+# to 127.0.0.1 on a machine you own; it is not acceptable on a public URL.
+#
+# Vercel auto-detects the `app` variable in server.py as a Python serverless
+# entrypoint, so excluding every .py file here is what stops that. vercel.json
+# pins the output directory as the primary control; this file is the backstop.
+#
+# NOTE: do NOT add `aegrys/` as a directory exclusion. gitignore syntax cannot
+# re-include a path underneath an excluded directory, so that would also drop
+# aegrys/web/static — the files we are actually deploying. Excluding `*.py`
+# matches at any depth and leaves the static assets intact.
+
+# --- every Python file, at any depth (this is what kills the entrypoint) ---
+*.py
+
+# --- directories with nothing the site needs ---
+bench/
+docs/
+exercises/
+scripts/
+tests/
+.cache/
+.venv/
+dist/
+.git/
+
+# --- local-only artefacts ---
+*.log
+*.jsonl
+*.db
+*.sqlite
+*.wav
+*.onnx
+
+# --- repo metadata not needed to serve static files ---
+pyproject.toml
+uv.lock
+.python-version
